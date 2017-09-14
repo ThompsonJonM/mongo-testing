@@ -33,6 +33,11 @@ function displayResults(data) {
   });
 }
 
+function setActive(selector) {
+  $('th').removeClass('active');
+  
+}
+
 $.getJSON("/all", function(data) {
   // Call our function to generate a table body
   displayResults(data);
